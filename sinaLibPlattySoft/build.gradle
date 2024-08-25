@@ -34,7 +34,7 @@ publishing {
             from components.findByName('release')
             groupId='com.github.shabanshaban'
             artifactId = 'sinaPlattySoft'
-            version = '1.0.8'
+            version = '1.0.0'
 
 
         }
