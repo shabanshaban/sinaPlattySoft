@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.library)
+    id 'maven-publish'
+
 }
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.example.sinalibplattysoft'
@@ -25,7 +28,18 @@ android {
     }
 
 }
+publishing {
+    publications {
+        release(MavenPublication){
+            from components.findByName('release')
+            groupId='com.github.shabanshaban'
+            artifactId = 'sinaPlattySoft'
+            version = '1.0.8'
 
+
+        }
+    }
+}
 dependencies {
 
     implementation libs.androidx.appcompat
