@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://dl.google.com/android/maven2' }
+        maven { url 'https://maven.google.com/' }
+        gradlePluginPortal()
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://dl.google.com/android/maven2' }
+        maven { url 'https://maven.google.com/' }
+        gradlePluginPortal()
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+        mavenCentral()
+    }
+}
+
+rootProject.name = "My Application"
+include ':app'
+include ':sinaplattysoft'
